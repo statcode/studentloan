@@ -11,20 +11,23 @@ Direction for running sloan.m can be found by typing "help sloan" in the Matlab 
 
 
 To test in Matlab, you can use the following sample input:
- >> amount = 100; IR = 2.5; term = 12;
- >> [monthly, CIRV, RBV] = sloan(amount,IR,term)
+
+amount = 100; IR = 2.5; term = 12;
+
+[monthly, CIRV, RBV] = sloan(amount,IR,term)
+
  
- 
- amount = original loan principal
+ _amount = original loan principal
  IR = Annual Interest Rate
  term = number in months to pay back loan
  You may modify the variables (amount, IR, term) to whatever numerical data you wish.
  monthly = monthly payment
  CIRV = cumulative interest rate vector
- RBV = remaining balance vector
+ RBV = remaining balance vector_
+
  
  
-- simple-amortization.xls should be opened using Microsoft Excel. When entering an interest rate, it should be divided by 12. For instance, for an interest rate of 8.25%, 8.25/12 = .6875. So, .6875 should be entered in the interest rate field to take in account of periodic payment.
+simple-amortization.xls should be opened using Microsoft Excel. When entering an interest rate, it should be divided by 12. For instance, for an interest rate of 8.25%, 8.25/12 = .6875. So, .6875 should be entered in the interest rate field to take in account of periodic payment.
 
 Results
 ------
@@ -87,10 +90,12 @@ In Minitab, because the remaining balance was rounded to the nearest .1 decimal,
 
 Notes
 ----
--A sample loan template was used from Vertex42.com to be validate as a real-world model. This template accepts
+A sample loan template was used from Vertex42.com to be validate as a real-world model. This template accepts
 three parameters: original loan amount, interest rate, and total # of periods (number of months to payback).
-- Statistical test was done on Minitab.
-- There seems to be a problem when the months is higher than 12 in Excel.
+
+Statistical test was done on Minitab.
+
+There seems to be a problem when the months is higher than 12 in Excel.
 
 
 
